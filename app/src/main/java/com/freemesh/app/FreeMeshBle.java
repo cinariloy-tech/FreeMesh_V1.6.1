@@ -399,7 +399,7 @@ public class FreeMeshBle {
     }
 
     private void js(String s) {
-        ui.post(() -> web.evaluateJavaScript(s, null));
+        ui.post(() -> web.evaluateJavascript(s, null));
     }
 
     @SuppressLint("MissingPermission")
