@@ -297,7 +297,7 @@ public class FreeMeshBle {
     private final Runnable rssiTick = new Runnable() {
         @SuppressLint("MissingPermission")
         @Override public void run() {
-            if (gatt != null && centralReady) gatt.readRssi();
+            if (gatt != null && centralReady) gatt.readRemoteRssi();
             ui.postDelayed(this, 3000);
         }
     };
